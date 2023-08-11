@@ -54,6 +54,9 @@ body {
     height: 80vh;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
 
 .hero-content {
@@ -62,6 +65,7 @@ body {
     text-align: center;
     padding: 24px;
     margin: 0 auto;
+   
 }
 
 .aboutme-container {
@@ -105,6 +109,33 @@ body {
 .projects-item {
     
 }
+
+.contact-content {
+    background: #29326a;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.contact-container {
+    color: #F1F1F1;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 1; 
+}
+
+.contact-container a {
+    text-decoration: none; /* Gets rid of default styling (mostly the underline) */
+    color: #f08527;
+    padding: 10px;
+}
+
 
 .footer-container {
     background: #1b1b27;
@@ -174,13 +205,13 @@ a:hover, a:active {
 
 .hero-content .btn:focus {
     background: #333333;
-    color: #F1F1F1;
+    color:#F1F1F1;
     border: 2px solid #333333;
 }
 .hero-content .btn:hover, .hero-content .btn:active {
-    background: #333333;
-    color: #F1F1F1;
-    border: 2px solid #666666;
+    background: #74b44a;
+    color: #080808;
+    border: 2px solid #74b44a; 
 }
 
 .btn, .btn:visited  {
@@ -323,6 +354,8 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+       
+    
     }
 
     .main-nav {
@@ -347,6 +380,7 @@ footer {
         padding: 6px 12px;
         border: solid 2px transparent;
         text-transform: uppercase;
+        
     }
     
     ul#navigation li a:hover {
@@ -364,7 +398,7 @@ footer {
  PRINT STYLES
 =============================================================================
 */
-
+.questions.item { min-width: 33%;}
 
 @media print {
 	* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
